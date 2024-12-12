@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the second tailwindCss project</title>
+    <link rel="stylesheet" href="output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <div class="main-container text-xl p-2">
+        <!----------------------------------------          ------------------       NAV bar STARTS here         -------------------          ---------------------------->
+        <nav class="container mx-auto  w-full flex justify-between items-center py-4 ">
+            <div class="logo-section flex gap-3 items-center">
+                <div class="logo-img w-14"><a href="#"><img src="img/Tailwind_CSS_Logo.svg" alt="Tailwind logo"></a></div>
+                <div class="logo-text font-bold "><a href="#">Tailwind Css</a></div>
+            </div>
+            <div class="menu-section flex  items-center space-x-6 ">
+                <a href="#" class="text-slate-800 hover:text-yellow-600 transition ease-linear duration-300 hidden md:block">Portfolio</a>
+                <a href="#" class="text-slate-800 hover:text-yellow-600 transition ease-linear duration-300 hidden md:block">About</a>
+                <a href="#" class="text-slate-800 hover:text-yellow-600 transition ease-linear duration-300 hidden md:block">Contact</a>
+                <a href="#" class="text-slate-800 hover:text-yellow-600 transition ease-linear duration-300 hidden md:block">Social</a>
+                <a href="#" class="text-white bg-orange-500 py-2 px-6 rounded-full transform hover:scale-105 transition-all duration-500 hidden md:block">Call Me</a>
+                <a href="#" onclick="showsidebar()" class="block md:hidden"><img  class=" w-7 " src="img/menu.png" alt=""></a>
+            </div>
+            <div class="sidebar hidden  flex-col justify-start items-center top-0 w-screen right-0 fixed bg-gray-100 pt-10 h-screen">
+                <a href="#" onclick="hideSideBar()" class=""><img  class="w-6" src="img/close.png" alt=""></a>
+                <a href="#" class="text-slate-800 hover:text-yellow-600 transition ease-linear duration-300 my-4 px-80">Portfolio</a>
+                <a href="#" class="text-slate-800 hover:text-yellow-600 transition ease-linear duration-300 my-4 px-80">About</a>
+                <a href="#" class="text-slate-800 hover:text-yellow-600 transition ease-linear duration-300 my-4 px-80">Contact</a>
+                <a href="#" class="text-slate-800 hover:text-yellow-600 transition ease-linear duration-300 my-4 px-80">Social</a>
+                <a href="#" class="text-white bg-orange-500 py-2  rounded-full transform hover:scale-105 transition-all duration-500 my-4 px-10">Call Me</a>
+            </div>
+        </nav>
+
+        <!----------------------------------------          ------------------       NAV bar ENDS here         -------------------          ---------------------------->
+        <!----------------------------------------          ------------------       HERO section STARTS here         -------------------          ---------------------------->
+        <div class=" container w-full mx-auto hero-section md:flex justify-between items-center">
+            <div class="hero-text mt-10 md:w-1/2 text-center md:text-left ">
+                <div class="main-text my-8 font-bold text-5xl md:w-96  text-gray-700">Rapidly build modern websites without ever leaving your HTML</div>
+                <div class="sub-text my-8 w-full md:w-4/5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate  iusto vitae perferendis officia, hic reprehenderit ullam cumque minus veritatis.</div>
+                <a href="#" class="text-white bg-orange-500 py-2  rounded-full transform hover:scale-105 transition-all duration-500 my-4 px-10">Get Started</a>
+            </div>
+            <div class="hero-img md:w-1/2 md:ml-2"><img src="img/undraw_website_5bo8.svg" alt=""></div>
+        </div>
+        <!----------------------------------------          ------------------       HERO section ENDS here         -------------------          ---------------------------->
+
+        <!----------------------------------------          ------------------       FEEDBACK section STARTS here         -------------------          ---------------------------->
+        <div class="feedback-section container my-14  flex flex-col items-center w-full mx-auto p-2">
+            <h1 class="font-bold text-4xl mt-32 mb-5 text-center text-gray-700">"Best practices" don't actually work</h1>
+            <p class=" w-4/5 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.  nesciunt veniam molestias ex repellat dicta ad ducimus quo. Magnam et minima voluptas molestias, tempora beatae velit voluptatum tenetur. Veniam quas, repellat magni ut praesentium esse? Fuga.</p>
+            <div class="users-pov grid md:grid-cols-3 w-full mx-auto my-16">
+                <div class="user-box my-5 mx-5 flex flex-col justify-end shadow-lg border items-center  bg-slate-300 bg-opacity-40  border-gray-100 rounded-lg py-5 px-4 cursor-pointer hover:mb-10 hover:pt-16 md:hover:mb-10 md:hover:-mt-11 hover:bg-slate-400 hover:bg-opacity-40  transition-all ease-linear duration-300">
+                    <img src="img/adam.f69b0b90.jpg" class=" w-24 rounded-full -mt-14 shadow-lg" alt="" >
+                    <h2 class="font-bold my-3 text-2xl text-gray-700">Adam Simoh</h2>
+                    <p class="text-center leading-6 ">Lorem ipsum dolor sit amet consectetur  Amet quis nihil dolores fuga dolorum repellat non nemo dolore esse maxime expedita magnam illo, odit totam?</p>                    
+                </div>
+                <div class="user-box my-5  mx-5 flex flex-col justify-end shadow-lg border items-center  border-gray-100 rounded-lg py-5 px-4 cursor-pointer hover:mb-10 hover:pt-16 md:hover:mb-10 md:hover:-mt-11 hover:bg-slate-400 hover:bg-opacity-40  transition-all ease-linear duration-300">
+                    <img src="img/adam.f69b0b90.jpg" class=" w-24 rounded-full -mt-14 shadow-lg" alt="" >
+                    <h2 class="font-bold my-3 text-2xl text-gray-700">Adam Simoh</h2>
+                    <p class="text-center leading-6 ">Lorem ipsum dolor sit amet consectetur  Amet quis nihil dolores fuga dolorum repellat non nemo dolore esse maxime expedita magnam illo, odit totam?</p>                    
+                </div>
+                <div class="user-box my-5  mx-5 flex flex-col justify-end shadow-lg border items-center  bg-slate-300 bg-opacity-40  border-gray-100 rounded-lg py-5 px-4 cursor-pointer hover:mb-10 hover:pt-16 md:hover:mb-10 md:hover:-mt-11 hover:bg-slate-400 hover:bg-opacity-40  transition-all ease-linear duration-300">
+                    <img src="img/adam.f69b0b90.jpg" class=" w-24 rounded-full -mt-14 shadow-lg" alt="" >
+                    <h2 class="font-bold my-3 text-2xl text-gray-700">Adam Simoh</h2>
+                    <p class="text-center leading-6 ">Lorem ipsum dolor sit amet consectetur  Amet quis nihil dolores fuga dolorum repellat non nemo dolore esse maxime expedita magnam illo, odit totam?</p>                    
+                </div>
+            </div>
+        </div>
+        <!----------------------------------------          ------------------       FEEDBACK section ENDS here         -------------------          ---------------------------->
+
+
+    </div>
+
+        <!----------------------------------------          ------------------       FOOTER section STARTS here         -------------------          ---------------------------->
+        <div class="footer_main bg-slate-700">
+            <footer class="container w-full mx-auto p-3 md:grid md:grid-cols-4 flex flex-col-reverse items-center text-gray-200">
+                <div class="footer-item1 mt-5 flex flex-col items-center md:items-start">
+                    <p class="md:hidden block">copyright &copy; 2024, All Rights Reserved</p>
+                    <div class="logo-section flex gap-3 items-center mt-3">
+                        <div class="logo-img w-14"><a href="#"><img src="img/Tailwind_CSS_Logo.svg" alt="Tailwind logo"></a></div>
+                        <div class="logo-text font-bold  hover:text-yellow-600 transition ease-linear duration-300"><a href="#">Tailwind Css</a></div>
+                    </div>
+                    <div class="social-media mt-3">
+                        <a href="#"><i class='bx bxl-facebook-circle text-4xl  hover:text-yellow-600 transition ease-linear duration-300' ></i></i></a>
+                        <a href="#"><i class='bx bxl-instagram-alt  text-4xl  hover:text-yellow-600 transition ease-linear duration-300' ></i></a>
+                        <a href="#"><i class='bx bxl-twitter  text-4xl  hover:text-yellow-600 transition ease-linear duration-300' ></i></a>
+                        <a href="#"><i class='bx bxl-linkedin-square  text-4xl  hover:text-yellow-600 transition ease-linear duration-300' ></i></a>
+                    </div>
+                </div>
+                <div class="footer-item2 mt-5 flex flex-col justify-start items-start md:ml-5">
+                    <a href="#" class=" hover:text-yellow-600 transition ease-linear duration-300">Home</a>
+                    <a href="#" class=" hover:text-yellow-600 transition ease-linear duration-300">About</a>
+                    <a href="#" class=" hover:text-yellow-600 transition ease-linear duration-300">Contact</a>
+                </div>
+                <div class="footer-item3 mt-5 flex flex-col justify-start items-start">
+                    <a href="#" class=" hover:text-yellow-600 transition ease-linear duration-300">Imprint</a>
+                    <a href="#" class=" hover:text-yellow-600 transition ease-linear duration-300">Privecy</a>
+                    <a href="#" class=" hover:text-yellow-600 transition ease-linear duration-300">Credits</a>
+                </div>
+                <div class="footer-item4 mt-5">
+                    <input type="text" placeholder="Subscribe to Newsletter" class="py-0 px-10 w-4/5 h-10 rounded-full mb-4 text-black bg-gray-100 outline-none">
+                    <a href="#" class="py-2 px-4  rounded-full text-white bg-orange-500">Go</a>
+                    <p class="mt-3 hidden md:block">copyright &copy; 2024, All Rights Reserved</p>
+                </div>
+            </footer>
+        </div>
+        <!----------------------------------------          ------------------       FOOTER section ENDS here         -------------------          ---------------------------->
+
+    <script>
+        function showsidebar(){
+            document.getElementsByClassName("sidebar")[0].classList.add("flex");
+            document.getElementsByClassName("sidebar")[0].classList.remove("hidden");
+        }
+        function hideSideBar(){
+            document.getElementsByClassName("sidebar")[0].classList.add("hidden");
+            document.getElementsByClassName("sidebar")[0].classList.remove("flex");
+        }
+    </script>
+</body>
+</html>
